@@ -1,0 +1,45 @@
+  <!-- 
+  File: projects.ejs
+  Name: Shota Ito
+  Student#: 301103095
+  Date: Oct 7th 2020
+   -->
+
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Main Section -->
+<main class="container">  
+    <div class="jumbotron">
+        <h1 class="section_title">- <%= title %> -</h1>
+
+        <div class="card-group">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fab fa-lg fa-github"></i> Github</h5>
+                    <p class="card-text">I will upload my work soon.</p>
+                    <a href="https://github.com/Shotamax95" class="btn btn-primary">Go Github</a>
+                </div>
+            </div>
+
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="far fa-lg fa-file"></i> Web Projects</h5>
+                    <p class="card-text">Some projects in class.</p>
+                    <a href="http://studentweb.cencol.ca/sito1/" class="btn btn-primary">Go My Work</a>
+                </div>
+            </div>
+
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-lg fa-tasks"></i> To Do List </h5>
+                    <p class="card-text">Weekly to do list using JavaScript.</p>
+                    <a href="http://studentweb.cencol.ca/sito1/comp125/assignment2/" class="btn btn-primary">Go To Do List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/footer.ejs %>

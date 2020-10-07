@@ -1,0 +1,39 @@
+  <!-- 
+  File: index.ejs
+  Name: Shota Ito
+  Student#: 301103095
+  Date: Oct 7th 2020
+   -->
+
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+  <!-- main section -->
+  <main class="container">  
+    <div class="jumbotron">
+        <h1 class="section_title">- <%= title %> -</h1>
+        <div class="content_home">
+        <div class="imgvh">
+        <img src="./Assets/images/s.png" class="pic_logo" alt="Logo image">
+        </div>
+        <h3>Welcome to my website.<br>My name is Shota.</h3>
+        <p>
+        I am learning web application using Express.js
+        <br>
+        This portfolio is made by Express.js
+        <br>
+        I will learn MongoDB & Angular.
+        </p>
+        <ul class="homeList">
+          <li>More detail <a href="/about"> About me...</a></li>
+          <li>Working some <a href="/projects"> Projects...</a></li>
+          <li>Provide these <a href="/services">Services...</a></li>
+          <li>Feel free to <a href="/contact">Contact me...</a></li>
+        </ul>
+        </div>
+    </div>
+  </main>
+
+<%- include partials/bottom_nav.ejs %>  
+<%- include partials/footer.ejs %>
+
