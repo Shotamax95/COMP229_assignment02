@@ -1,5 +1,5 @@
 {
-  "name": "assignment1",
+  "name": "comp229-assignment1-portfolio",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -28,5 +28,13 @@
     "@types/express": "^4.17.8",
     "@types/morgan": "^1.9.1",
     "@types/node": "^14.11.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shotamax95/COMP229_assignment01.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shotamax95/COMP229_assignment01/issues"
+  },
+  "homepage": "https://github.com/Shotamax95/COMP229_assignment01#readme"
 }
