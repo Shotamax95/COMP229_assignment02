@@ -5,6 +5,12 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+
+  "engines": {
+    "node": "^14.10.1",
+    "npm": "^6.14.8"
+  },
+
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.0",
     "bootstrap": "^4.5.2",
@@ -18,10 +24,7 @@
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   },
-  "engines": {
-    "node": "^14.10.1",
-    "npm": "^6.14.8"
-  },
+
   "description": "assignment1",
   "main": "server.js",
   "author": "Shota Ito",
