@@ -19,8 +19,8 @@
     "popper.js": "^1.16.1"
   },
   "engines": {
-    "node": "^12.18.3",
-    "npm": "^6.0.0"
+    "node": "^14.10.1",
+    "npm": "^6.14.8"
   },
   "description": "assignment1",
   "main": "server.js",
