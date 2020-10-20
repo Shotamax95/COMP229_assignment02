@@ -2,7 +2,7 @@
 File: index.js
 Name: Shota Ito
 Student#: 301103095
-Date: Oct 7th 2020
+Date: Oct 22nd 2020
 */
 
 let express = require('express');

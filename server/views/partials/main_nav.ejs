@@ -2,14 +2,14 @@
   File: main.ejs
   Name: Shota Ito
   Student#: 301103095
-  Date: Oct 7th 2020
+  Date: Oct 22nd 2020
    -->
 
 <!-- nav var section -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">
-        <img src="./Assets/images/s.png" alt="" width="70" height="40">
+        <img src="./../../Assets/images/s.png" alt="" width="70" height="40">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -57,6 +57,14 @@
         <li class="nav-item">
         <% } %>
           <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact</a>
+        </li>
+
+        <% if(title == "Contact List") { %>
+        <li class="nav-item active">
+        <% } else { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" href="/contact-list"><i class="fas fa-address-book"></i> Contact List</a>
         </li>
 
       </ul> 
