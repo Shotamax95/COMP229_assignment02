@@ -9,6 +9,21 @@ Date: Oct 22nd 2020
 
     function Start(){
 
+        // ------------------Contact List -------------------------------
+        let deleteButtons = document.querySelectorAll('.backList');
+            
+        for(button of deleteButtons)
+        {
+            button.addEventListener('click', (event)=>{
+                if(!confirm("Are you sure?")) 
+                {
+                    event.preventDefault();
+                    window.location.assign('/contact-list');
+                }
+            });
+        }
+
+        // ------------------Contact-------------------------------
         if(document.title == "Contact")
         {
             let sendButton = document.getElementById("sendButton");
@@ -41,6 +56,8 @@ Date: Oct 22nd 2020
                 }
             });
         }
+
+
     }
     
 
