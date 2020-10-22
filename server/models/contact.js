@@ -1,3 +1,10 @@
+/*
+File: contact.ejs
+Name: Shota Ito
+Student#: 301103095
+Date: Oct 22nd 2020
+ */
+
 let mongoose = require('mongoose');
 
 // create a model class

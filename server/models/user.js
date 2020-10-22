@@ -1,3 +1,10 @@
+/*
+File: contact.ejs
+Name: Shota Ito
+Student#: 301103095
+Date: Oct 22nd 2020
+ */
+
 // require modules for the User model
 let mongoose =require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');

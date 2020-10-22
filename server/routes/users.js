@@ -1,3 +1,10 @@
+/*
+File: contact.ejs
+Name: Shota Ito
+Student#: 301103095
+Date: Oct 22nd 2020
+ */
+
 var express = require('express');
 var router = express.Router();
 

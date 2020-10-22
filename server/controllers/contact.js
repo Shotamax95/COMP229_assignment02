@@ -1,3 +1,10 @@
+/*
+File: contact.ejs
+Name: Shota Ito
+Student#: 301103095
+Date: Oct 22nd 2020
+ */
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
