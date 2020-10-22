@@ -14,36 +14,49 @@
        <div class="offset-md-1 col-md-10">
        <br>
          <h1 class="text-center">- <%= title %> -</h1>
+
+          <% if(typeof displayName == 'string' && displayName) { %>
           <a href="/contact-list/add" class="btn btn-primary" role="button">
-          <i class="fas fa-plus-circle"></i> Add a Contact </a> 
+          <i class="fas fa-plus-circle"></i> Add a Contact </a>
+          <% } %>
          <br>
          <table class="table table-bordered table-striped table-hover">
            <!-- header row-->
            <tr class="d-flex"> 
-             <th class="text-center col-2">Contact Name</th>
-             <th class="text-center col-3">Contact Number</th>
-             <th class="text-center col-5">E-mail</th>
-             <th class="text-center col-1"></th>
-             <th class="text-center col-1"></th>
-
+            <% if(typeof displayName == 'string' && displayName) { %>
+              <th class="text-center col-2">Contact Name</th>
+              <th class="text-center col-3">Contact Number</th>
+              <th class="text-center col-5">E-mail</th>
+              <th class="text-center col-1"></th>
+              <th class="text-center col-1"></th>
+            <% } else { %>
+              <th class="text-center col-3">Contact Name</th>
+              <th class="text-center col-4">Contact Number</th>
+              <th class="text-center col-5">E-mail</th>
+             <% } %>
            </tr> 
 
            <!-- Repeatable Template row -->
 
            <% for(let count = 0; count< ContactList.length; count++){ %>
-              <tr class="d-flex">  
-                <td class="text-center col-2"><%= ContactList[count].contactName %></td>
-                <td class="text-center col-3"><%= ContactList[count].contactNumber %></td>
-                <td class="text-center col-5"><%= ContactList[count].email %></td>
-                <td class="text-center col-1">
-                  <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
-                  <i class="fas fa-pencil-alt"></i> Edit</a>
-                </td>
-                <td class="text-center col-1">
-                  <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-danger btn-sm">
+              <tr class="d-flex">
+                <% if(typeof displayName == 'string' && displayName) { %>  
+                  <td class="text-center col-2"><%= ContactList[count].contactName %></td>
+                  <td class="text-center col-3"><%= ContactList[count].contactNumber %></td>
+                  <td class="text-center col-5"><%= ContactList[count].email %></td>
+                  <td class="text-center col-1">
+                    <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Edit</a>
+                  </td>
+                  <td class="text-center col-1">
+                    <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-danger btn-sm">
                     <i class="fas fa-trash-alt"></i> Delete</a>
-                </td>
-
+                  </td>
+                <% } else { %>
+                  <td class="text-center col-3"><%= ContactList[count].contactName %></td>
+                  <td class="text-center col-4"><%= ContactList[count].contactNumber %></td>
+                  <td class="text-center col-5"><%= ContactList[count].email %></td>
+                <% } %>
               </tr>
           <% } %>
          </table>

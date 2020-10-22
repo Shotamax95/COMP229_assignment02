@@ -30,4 +30,22 @@ router.get('/services', indexController.displayServicesPage);
 router.get('/contact', indexController.displayContactPage);
 
 
+// Get Route for displaying Login page
+router.get('/login', indexController.displayLoginPage);
+
+// Post Route for processing Login page
+router.post('/login', indexController.processLoginPage);
+
+// Get Route for displaying register page
+router.get('/register', indexController.displayRegisterPage);
+
+// Post Route for processing Register page
+router.post('/register', indexController.processRegisterPage);
+
+// Get to perform User Logout deletion
+router.get('/logout', indexController.performLogout);
+
+
+
+
 module.exports = router;
